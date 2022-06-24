@@ -1,0 +1,319 @@
+@font-face {
+    font-family: 'Montserrat'; 
+    src: url(fonts/Montserrat-SemiBold.ttf); 
+}
+a:link {
+    text-decoration: none;
+    color: black;
+}
+body {
+
+    font-family: 'Montserrat';
+
+}
+.header {
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+.navigator {
+    margin: auto;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 40px;
+}
+.profile,
+.register,
+.promo,
+.search {
+   
+    margin-right: 15px;
+}
+.itcss {
+  position: relative;
+  overflow: hidden;
+  max-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* стили для wrapper */
+.itcss__wrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: #87CEFA;
+}
+
+/* стили для элемента, в котором непосредственно расположены элементы (слайды) */
+.itcss__items {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* класс для отключения transition */
+.transition-none {
+  transition: none;
+}
+
+/* стили для элементов */
+.itcss__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+/* кнопки Prev и Next */
+.itcss__control {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 50px;
+  transform: translateY(-50%);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0.5;
+  user-select: none;
+}
+
+.itcss__control_show {
+  display: flex;
+}
+
+.itcss__control:hover,
+.itcss__control:focus {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.itcss__control_prev {
+  left: 0;
+}
+
+.itcss__control_next {
+  right: 0;
+}
+
+.itcss__control::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.itcss__control_prev::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.itcss__control_next::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* Индикаторы */
+.itcss__indicators {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin: 0 15%;
+  list-style: none;
+  user-select: none;
+}
+
+.itcss__indicator {
+  flex: 0 1 auto;
+  width: 30px;
+  height: 4px;
+  margin-right: 3px;
+  margin-left: 3px;
+  background-color: black;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  cursor: pointer;
+}
+
+.itcss__indicator_active {
+  background-color: red;
+}
+.booking_div {
+    justify-content: center;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.gg {
+    text-align: center;
+}
+.promotions1 {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 550px;
+    margin: auto;
+   
+  border-radius: 10px;
+}
+
+.promotion {
+
+    margin-top: 40px;
+    font-size: 15px;
+}
+.test-0-ai {
+    width: 350px;
+}
+.subscribe_div {
+   margin-top: 30px;
+    margin-bottom: 10px;
+    width: 550px;
+    margin: auto;
+  background: #f3e1ff;
+  border-radius: 10px;
+  border: 10px;
+}
+.test-0-sbs {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    background-color: #f3e1ff;
+    border-color: #ddabff;
+    width: 176px;
+}
+.test-0-sie {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    background-color: #f3e1ff;
+    border: 0;
+    width: 176px;
+}
+.phone {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 550px;
+    margin: auto;
+    background: #f3e1ff;
+  border-radius: 10px;
+}
+.test-1-fbs {
+    font-family: 'Montserrat';
+    background-color: #e9ffe1;
+    border-color: #79ffa1;
+    width: 176px;
+    margin-bottom: 10px;
+}
+.input_label {
+    width: -200px;
+}
+
+.register_table {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+}
+
+.booking_div {
+    margin-top: 10px;
+    background: #fffee1;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.06);
+    margin-bottom: 10px;
+}
+.profile_div {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.test-3-name,
+.test-3-last {
+    margin-right: 3px;
+    margin-left: 2px;
+    font-size: 18px;
+}
+
+.test-3-num {
+    margin-top: -10px;
+    font-size: 18px;
+}
+.trust_div {
+    background: #ffece1;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.06);
+    margin-bottom: 10px;
+}
+.search_table {
+    text-align: center;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.search_table tbody tr:nth-child(2n) {
+    background: white;
+}
+.test-3-code,
+.test-3-d1,
+.test-3-t1,
+.test-3-t2,
+.test-3-from,
+.test-3-to {
+    width: 16%;
+}
+
+.test-3-logout {
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    background-color: #ffe1e1;
+    border-color: #ffb4b4;
+    width: 176px;
+    margin-bottom: 10px;
+}
+.search_div {
+    background: #e1eeff;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.06);
+    margin-bottom: 10px;
+}
+.test-1-fpn,
+.test-1-fps,
+.test-2-name,
+.test-2-last,
+.test-2-doc,
+.test-2-phone,
+.test-2-pass,
+.test-2-pass2,
+.test-2-btn {
+    font-family: 'Montserrat';
+    width: 150px;
+}
+.test-2-btn {
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    background-color: #e9ffe1;
+    border-color: #79ffa1;
+    width: 176px;
+    margin-bottom: 10px;
+    
+}
